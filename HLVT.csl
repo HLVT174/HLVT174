@@ -17,7 +17,6 @@
     <updated>2024-11-13T04:08:04+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
-
   <!-- Macros -->
   <macro name="author">
     <group suffix=" ">
@@ -37,7 +36,6 @@
       </else>
     </choose>
   </macro>
-
   <macro name="title">
     <choose>
       <if type="book thesis legislation report document" match="any">
@@ -48,13 +46,11 @@
       </else>
     </choose>
   </macro>
-
   <macro name="year">
     <date date-parts="year" form="numeric" variable="issued">
       <date-part name="year"/>
     </date>
   </macro>
-
   <macro name="conference">
     <group delimiter=", ">
       <text variable="container-title" font-style="italic"/>
@@ -64,7 +60,6 @@
       <text variable="page"/>
     </group>
   </macro>
-
   <macro name="book-publisher">
     <group delimiter=", ">
       <text variable="genre"/>
@@ -72,17 +67,14 @@
       <text variable="publisher-place"/>
     </group>
   </macro>
-
   <macro name="firstNamFirst">
     <group>
       <names variable="reviewed-author" delimiter=", "/>
     </group>
   </macro>
-
   <macro name="soTrang">
     <text variable="language"/>
   </macro>
-
   <!-- Citation layout -->
   <citation near-note-distance="2">
     <layout font-variant="normal" delimiter="], [" prefix=" [" suffix="]">
@@ -92,7 +84,6 @@
       </group>
     </layout>
   </citation>
-
   <!-- Bibliography layout -->
   <bibliography and="text" delimiter-precedes-et-al="never" initialize-with="." sort-separator="." second-field-align="flush" entry-spacing="0">
     <sort>
